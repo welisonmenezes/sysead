@@ -1,0 +1,72 @@
+.sidenav-trigger.top-nav {
+    position: absolute;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    top: 0;
+    float: none;
+    margin-left: 1.5rem;
+    color: #f3989b;
+    font-size: 36px;
+    z-index: 2;
+    display: none;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 998;
+    height: 64px;
+    -webkit-box-shadow: 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+    box-shadow: 0 4px 16px 0 rgba(167, 175, 183, 0.33);
+    background: #fff;
+    padding-left: 300px;
+}
+.fixed-top .container {
+    padding-top: 18px;
+}
+.fixed-top #dropdown1 {
+    top: 45px !important;
+}
+
+.sidenav-fixed {
+    z-index: 999;
+}
+
+.content-area {
+    padding-top: 90px;
+    padding-left: 300px;
+}
+.content-area.no-sidebar {
+    padding-left: 0;
+}
+
+.box-logo {
+    padding: 10px 32px;
+}
+.box-logo img{
+    max-width: 100px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.main-menu  h6 {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 32px;
+}
+
+@media (max-width: 993px) {
+    .hide-on-large-only {
+        display: block !important;
+    }
+    .content-area,
+    .fixed-top {
+        padding-left: 0;
+    }
+}
