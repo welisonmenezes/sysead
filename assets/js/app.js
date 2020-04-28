@@ -11,5 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     //modal
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, {});
+
+    // selects
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, {});
 });
 
