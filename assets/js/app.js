@@ -7,4 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // sidebar
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {});
+    
+    //modal
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, {});
 });
+
