@@ -1,0 +1,11 @@
+*.mwb.bak
+.vscode
+__pycache__
+venv
+node_modules
+build
+package-lock.json
+.DS_Store
+.log
+*.log
+*.pyc
