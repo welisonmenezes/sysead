@@ -121,9 +121,9 @@
                                 <li class="collection-item"><b>Autor(a)</b> Sabrina Bett</li>
                                 <li class="collection-item"><b>Status:</b> Aberto</li>
                             </ul>
-                            <a href="editar.html" class="waves-effect waves-light btn">Editar</a>
                             <a href="javascript:history.go(-1)" class="waves-effect waves-light btn blue-grey">Voltar</a>
-                            <a href="#" class="waves-effect waves-light btn red">Deletar</a>
+                            <a href="editar.html" class="waves-effect waves-light btn">Editar</a>
+                            <a href="#modaldeletar" class="waves-effect waves-light btn red modal-trigger">Deletar</a>
                         </div>
                     </div>
                 </div>
@@ -187,6 +187,16 @@
         </form>
 
     </main>
+
+    <div id="modaldeletar" class="modal">
+        <div class="modal-content">
+            <h4>Deseja realmente deletar este item?</h4>
+        </div>
+        <div class="modal-footer">
+            <button class="waves-effect waves-light btn red modal-close">Deletar</button>
+            <a href="#!" class="btn waves-effect waves-light blue-grey lighten-2 modal-close">Cancelar</a>
+        </div>
+    </div>
 
     <div id="modal1" class="modal modal-fixed-footer">
         <div class="modal-content">
