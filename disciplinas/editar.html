@@ -102,12 +102,7 @@
 
         <form class="container">
             <div class="row">
-                <div class="col s12">
-                    <h1>Editar Disciplina</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s4">
+                <div class="col s5">
                     <div class="row">
                         <div class="col s12">
                             <h4>Editar Disciplina</h4>
@@ -115,47 +110,371 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="nome" type="text" class="validate">
+                            <input id="nome" type="text" class="validate" value="name-here">
                             <label for="nome" class="">Nome</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="descricao" type="text" class="validate">
+                            <input id="descricao" type="text" class="validate" value="description-here">
                             <label for="descricao" class="">Descrição</label>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="input-field col s12">
-                            <input id="descricao" type="password" class="validate" readonly>
-                            <label for="descricao" class="">Adicionar Professor a Disciplina:</label>
-                            <!-- Modal Trigger -->
-                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Adicionar Professor</a>                         
+                        <div class="input-field col s10">
+                            <div class="chips chips chips-autocomplete"></div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <label>Upload da Imagem da capa</label>
+                        <div class="col s2">
                             <br>
+                            <a class="btn-floating btn waves-effect waves-light modal-trigger" href="#modal1">
+                                <i class="material-icons">add</i>
+                            </a>
                         </div>
-                        <div class="input-field col s12">
-                            <input id="imagem" type="file" accept="image/*">
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="box-info">
+                                <img src="../assets/img/javascript-1.png">
+                            </div>
+                        </div>
+                        <div class="file-field input-field col s12">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Imagem de capa">
+                            </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="input-field col s12">
-                            <button class="waves-effect waves-light btn">Editar</button>
+                            <button class="waves-effect waves-light btn">Cadastrar</button>
                             <a href="listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
                         </div>
                     </div>
+                </div>
+
+                <div class="col s6 offset-s1">
+                    <div class="row">
+                        <div class="col s8">
+                            <h4>Turmas</h4>
+                        </div>
+                        <div class="col s4 text-right">
+                            <a class="btn-floating btn waves-effect waves-light modal-trigger" href="#modal3">
+                                <i class="material-icons left">search</i>
+                            </a>
+                            <a class="btn-floating btn waves-effect waves-light modal-trigger" href="#modal2">
+                                <i class="material-icons left">add</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Diciplina</th>
+                                        <th>Professor</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Desenvolvimento Web 5ª Fase</td>
+                                        <td>Luciano Coelho</td>
+                                        <td>
+                                            <a class="btn-floating btn-small red waves-effect waves-light" href="#!">
+                                                <i class="material-icons">delete</i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>UX Design 4ª Fase</td>
+                                        <td>Sabrina Bet</td>
+                                        <td>
+                                            <a class="btn-floating btn-small red waves-effect waves-light" href="#!">
+                                                <i class="material-icons">delete</i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Marketing 6ª Fase</td>
+                                        <td>Giovani Letti</td>
+                                        <td>
+                                            <a class="btn-floating btn-small red waves-effect waves-light" href="#!">
+                                                <i class="material-icons">delete</i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </form>
 
     </main>
+
+
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <form class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="col s12">
+                                <h4>Cadastrar Professor</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate">
+                                <label for="nome" class="">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" class="">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="cpf" type="text" class="validate">
+                                <label for="cpf" class="">CPF</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="telefone" type="text" class="validate">
+                                <label for="telefone" class="">Telefone</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="matricula" type="text" class="validate">
+                                <label for="matricula" class="">Matrícula</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="senha" type="password" class="validate">
+                                <label for="senha" class="">Senha</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="waves-effect waves-light btn modal-close">Cadastrar</button>
+            <a href="#!" class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</a>
+        </div>
+    </div>
+
+
+    <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <form class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="col s12">
+                                <h4>Cadastrar Turma</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate">
+                                <label for="nome" class="">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="descricao" type="text" class="validate">
+                                <label for="descricao" class="">Descrição</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" id="data_entrada" class="datepicker">
+                                <label for="data_entrada" class="">Data de Entrada</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" id="data_saida" class="datepicker">
+                                <label for="data_saida" class="">Data de Saída</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select placeholder="Status">
+                                    <option value="" disabled selected>Status</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="file-field input-field s12">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Imagem de capa">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="waves-effect waves-light btn modal-close">Cadastrar</button>
+            <a href="#!" class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div>
+                            <div class="input-field col s12">
+                                <input type="text" id="search">
+                                <label for="search" class="">Buscar</label>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Data Criação</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <a href="ver.html" class="waves-effect waves-light btn btn-small">selecionar</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <ul class="pagination">
+                                <li class="disabled">
+                                    <a href="#!"><i class="material-icons">chevron_left</i></a>
+                                </li>
+                                <li class="active"><a href="#!">1</a></li>
+                                <li class="waves-effect"><a href="#!">2</a></li>
+                                <li class="waves-effect"><a href="#!">3</a></li>
+                                <li class="waves-effect"><a href="#!">4</a></li>
+                                <li class="waves-effect"><a href="#!">5</a></li>
+                                <li class="waves-effect">
+                                    <a href="#!"><i class="material-icons">chevron_right</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</a>
+        </div>
+    </div>
 
 
     <script src="../assets/vendors/materialize/materialize.min.js"></script>
