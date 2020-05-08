@@ -90,6 +90,13 @@
     padding: 0 32px;
 }
 
+.form-filter .btn-flat {
+    margin-top: 6px;
+}
+.form-filter .btn-flat i{
+    margin: 0;
+}
+
 @media (max-width: 993px) {
     .hide-on-large-only {
         display: block !important;
