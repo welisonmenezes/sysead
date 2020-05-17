@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetim</title>
+    <title>SYSEAD - Protótipo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/materialize/materialize.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <nav id="nav-mobile" class="sidenav sidenav-fixed">
         <div class="box-logo">
@@ -18,10 +20,10 @@
                 <h6>EAD</h6>
                 <ul>
                     <li>
-                        <a href="disciplinas/listar.html">Disciplinas</a>
+                        <a href="periodos/listar.html">Contextos</a>
                     </li>
                     <li>
-                        <a href="periodos/listar.html">Períodos Letivo</a>
+                        <a href="disciplinas/listar.html">Disciplinas</a>
                     </li>
                     <li>
                         <a href="#!">Turmas</a>
@@ -30,16 +32,19 @@
                         <a href="unidades/listar.html">Unidades</a>
                     </li>
                     <li>
-                        <a href="tarefas/listar.html">Tarefas</a>
+                        <a href="#!">Conteúdos</a>
                     </li>
                     <li>
                         <a href="foruns/listar.html">Fóruns</a>
                     </li>
                     <li>
-                        <a href="#!">Conteúdos</a>
+                        <a href="tarefas/listar.html">Tarefas</a>
                     </li>
                     <li>
                         <a href="#!">Notas</a>
+                    </li>
+                    <li>
+                        <a href="biblioteca/listar.html">Biblioteca</a>
                     </li>
                 </ul>
             </li>
@@ -52,44 +57,27 @@
                     <li>
                         <a href="grupos/listar.html">Grupos</a>
                     </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Biblioteca e Mídias</h6>
-                <ul>
-                    <li>
-                        <a href="biblioteca/listar.html">Biblioteca</a>
-                    </li>
-                    <li>
-                        <a href="#!">Midias</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Chats e Canais</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Chats</a>
-                    </li>
                     <li>
                         <a href="canais/listar.html">Canais</a>
                     </li>
                 </ul>
             </li>
         </ul>
-
     </nav>
     <header class="fixed-top">
         <div>
-            <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only"><i
-                    class="material-icons">menu</i></a>
+            <button data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </button>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col s12 text-right">
-                    <a class='dropdown-trigger' href='#' data-target='dropdown1'>Welison Menezes</a>
+                    <button class='dropdown-trigger' data-target='dropdown1'>Welison Menezes</button>
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">Logout</a></li>
+                        <li>
+                            <a href="#!">Logout</a>
+                        </li>
                     </ul>
                 </div>
             </div>
