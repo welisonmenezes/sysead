@@ -6,31 +6,35 @@ function MakeNavigation() {
     if (links) {
         PreventPagination();
         [].forEach.call(links, function(link) {
-            link.addEventListener('click', function(evt) {
-                evt.stopPropagation();
-                evt.preventDefault();
-                    var el = evt.target
-                    if (el && ! el.classList.contains('without-navigation')) {
-                        index = 0
-                        limit = 10000;
-                        new_el = evt.path[index];
-                        while (! new_el.getAttribute('href') || limit <= 0) {
-                            index++;
-                            new_el = evt.path[index];
-                            limit--;
-                        }
-                        if (! new_el.classList.contains('without-navigation')) {
-                            var url = new_el.getAttribute('href');
-                            if (url && url != '#' && url != '#!') {
-                                LoadPages(url);
-                            } else {
-                                PageNotFound();
-                            }
-                        }
-                    }    
-            });
+            link.removeEventListener('click', AddNavEvent);
+            link.addEventListener('click', AddNavEvent);
         });
     }
+}
+
+function AddNavEvent(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+        var el = evt.target
+        if (el && ! el.classList.contains('without-navigation')) {
+            index = 0
+            limit = 10000;
+            new_el = evt.path[index];
+            while (! new_el.getAttribute('href') || limit <= 0) {
+                index++;
+                new_el = evt.path[index];
+                limit--;
+            }
+            if (! new_el.classList.contains('without-navigation')) {
+                var url = new_el.getAttribute('href');
+                if (url && url != '#' && url != '#!') {
+                    LoadPages(url);
+                } else {
+                    PageNotFound();
+                }
+            }
+            
+        }    
 }
 
 function LoadPages(url) {
@@ -39,9 +43,7 @@ function LoadPages(url) {
     .then((html) => {
         document.getElementById('app').innerHTML = html;
         MakeNavigation();
-        setTimeout(function() {
-            LoadScripts();
-        },200);
+        LoadScripts();
     })
     .catch((error) => {
         console.log(error)
