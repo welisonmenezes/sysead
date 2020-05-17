@@ -1,221 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetim</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/vendors/materialize/materialize.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-</head>
-
-<body>
-
-    <nav id="nav-mobile" class="sidenav sidenav-fixed">
-        <div class="box-logo">
-            <img src="../assets/img/logo-ead1.png">
+<main class="content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1>Canal</h1>
+            </div>
         </div>
-        <ul class="main-menu">
-            <li>
-                <h6>EAD</h6>
-                <ul>
-                    <li>
-                        <a href="../disciplinas/listar.html">Disciplinas</a>
-                    </li>
-                    <li>
-                        <a href="../periodos/listar.html">Períodos Letivo</a>
-                    </li>
-                    <li>
-                        <a href="#!">Turmas</a>
-                    </li>
-                    <li>
-                        <a href="../unidades/listar.html">Unidades</a>
-                    </li>
-                    <li>
-                        <a href="../tarefas/listar.html">Tarefas</a>
-                    </li>
-                    <li>
-                        <a href="#!">Fóruns</a>
-                    </li>
-                    <li>
-                        <a href="#!">Atividades</a>
-                    </li>
-                    <li>
-                        <a href="#!">Notas</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Usuários</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Usuários</a>
-                    </li>
-                    <li>
-                        <a href="../grupos/listar.html">Grupos</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Biblioteca e Mídias</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Biblioteca</a>
-                    </li>
-                    <li>
-                        <a href="#!">Midias</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Chats e Canais</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Chats</a>
-                    </li>
-                    <li>
-                        <a href="listar.html">Canais</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-    </nav>
-
-    <header class="fixed-top">
-        <div>
-            <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only"><i
-                    class="material-icons">menu</i></a>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 text-right">
-                    <a class='dropdown-trigger' href='#' data-target='dropdown1'>Welison Menezes</a>
-                    <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">Logout</a></li>
-                    </ul>
+        <div class="row">
+            <div class="col s4">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Detalhes do canal</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="nome" type="text" class="validate" value="Canal Test">
+                        <label for="nome" class="">Nome</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="descricao" type="text" class="validate" value="Lorem ipsum dolor">
+                        <label for="descricao" class="">Descrição</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="status" type="text" class="validate" value="Aberto">
+                        <label for="status" class="">Status</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button class="waves-effect waves-light btn">Editar</button>
+                        <a href="canais/listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s7 offset-s1">
+                <div class="row">
+                    <div class="col s8">
+                        <h4>Participantes</h4>
+                    </div>
+                    <div class="col s4 text-right">
+                        <button class="waves-effect waves-light btn btn-small">Adicionar Participante</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Data</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Fulano de Tal de Tal</td>
+                                    <td>99/99/9999</td>
+                                    <td>
+                                        <button class="waves-effect waves-light btn btn-small">ver</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Fulano de Tal de Tal</td>
+                                    <td>99/99/9999</td>
+                                    <td>
+                                        <button class="waves-effect waves-light btn btn-small">ver</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano de Tal de Tal</td>
+                                    <td>99/99/9999</td>
+                                    <td>
+                                        <button class="waves-effect waves-light btn btn-small">ver</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano de Tal de Tal</td>
+                                    <td>99/99/9999</td>
+                                    <td>
+                                        <button class="waves-effect waves-light btn btn-small">ver</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano de Tal de Tal</td>
+                                    <td>99/99/9999</td>
+                                    <td>
+                                        <button class="waves-effect waves-light btn btn-small">ver</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <main class="content-area">
-        
-        <form class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h1>Canal</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s4">
-                    <div class="row">
-                        <div class="col s12">
-                            <h4>Detalhes do canal</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="nome" type="text" class="validate" value="Canal Test">
-                            <label for="nome" class="">Nome</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="descricao" type="text" class="validate" value="Lorem ipsum dolor">
-                            <label for="descricao" class="">Descrição</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="status" type="text" class="validate" value="Aberto">
-                            <label for="status" class="">Status</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <button class="waves-effect waves-light btn">Editar</button>
-                            <a href="listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s7 offset-s1">
-                    <div class="row">
-                        <div class="col s8">
-                            <h4>Participantes</h4>
-                        </div>
-                        <div class="col s4 text-right">
-                            <a href="#" class="waves-effect waves-light btn btn-small">Adicionar Participante</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Nome</th>
-                                        <th>Data</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Fulano de Tal de Tal</td>
-                                        <td>99/99/9999</td>
-                                        <td>
-                                            <a href="ver.html" class="waves-effect waves-light btn btn-small">ver</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Fulano de Tal de Tal</td>
-                                        <td>99/99/9999</td>
-                                        <td>
-                                            <a href="ver.html" class="waves-effect waves-light btn btn-small">ver</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Fulano de Tal de Tal</td>
-                                        <td>99/99/9999</td>
-                                        <td>
-                                            <a href="ver.html" class="waves-effect waves-light btn btn-small">ver</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Fulano de Tal de Tal</td>
-                                        <td>99/99/9999</td>
-                                        <td>
-                                            <a href="ver.html" class="waves-effect waves-light btn btn-small">ver</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Fulano de Tal de Tal</td>
-                                        <td>99/99/9999</td>
-                                        <td>
-                                            <a href="ver.html" class="waves-effect waves-light btn btn-small">ver</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </form>
-
-    </main>
-
-
-    <script src="../assets/vendors/materialize/materialize.min.js"></script>
-    <script src="../assets/js/app.js"></script>
-</body>
-
-</html>
+    </div>
+</main>

@@ -4,27 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetim</title>
+    <title>SYSEAD - Protótipo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/materialize/materialize.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-
     <nav id="nav-mobile" class="sidenav sidenav-fixed">
         <div class="box-logo">
-            <img src="assets/img/logo-ead1.png">
+            <img src="assets/img/logo-ead1.png" alt="alt">
         </div>
         <ul class="main-menu">
             <li>
                 <h6>EAD</h6>
                 <ul>
                     <li>
-                        <a href="disciplinas/listar.html">Disciplinas</a>
+                        <a href="periodos/listar.html">Contextos</a>
                     </li>
                     <li>
-                        <a href="periodos/listar.html">Períodos Letivo</a>
+                        <a href="disciplinas/listar.html">Disciplinas</a>
                     </li>
                     <li>
                         <a href="#!">Turmas</a>
@@ -33,16 +32,19 @@
                         <a href="unidades/listar.html">Unidades</a>
                     </li>
                     <li>
+                        <a href="#!">Conteúdos</a>
+                    </li>
+                    <li>
+                        <a href="foruns/listar.html">Fóruns</a>
+                    </li>
+                    <li>
                         <a href="tarefas/listar.html">Tarefas</a>
                     </li>
                     <li>
-                        <a href="#!">Fóruns</a>
-                    </li>
-                    <li>
-                        <a href="#!">Atividades</a>
-                    </li>
-                    <li>
                         <a href="#!">Notas</a>
+                    </li>
+                    <li>
+                        <a href="biblioteca/listar.html">Biblioteca</a>
                     </li>
                 </ul>
             </li>
@@ -50,29 +52,10 @@
                 <h6>Usuários</h6>
                 <ul>
                     <li>
-                        <a href="#!">Usuários</a>
+                        <a href="usuarios/listar.html">Usuários</a>
                     </li>
                     <li>
                         <a href="grupos/listar.html">Grupos</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Biblioteca e Mídias</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Biblioteca</a>
-                    </li>
-                    <li>
-                        <a href="#!">Midias</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Chats e Canais</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Chats</a>
                     </li>
                     <li>
                         <a href="canais/listar.html">Canais</a>
@@ -80,31 +63,31 @@
                 </ul>
             </li>
         </ul>
-
     </nav>
-
     <header class="fixed-top">
         <div>
-            <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only"><i
-                    class="material-icons">menu</i></a>
+            <a data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only without-navigation">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col s12 text-right">
-                    <a class='dropdown-trigger' href='#' data-target='dropdown1'>Welison Menezes</a>
+                    <a class='dropdown-trigger without-navigation' data-target='dropdown1'>Welison Menezes</a>
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">Logout</a></li>
+                        <li>
+                            <a href="#!">Logout</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-
-    <main class="content-area">
-        
-    </main>
-
-
+    <div id="app">
+        <main class="content-area text-center">
+            <p>Bem vindo!</p>
+        </main>
+    </div>
     <script src="assets/vendors/materialize/materialize.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
