@@ -1,7 +1,6 @@
 MakeNavigation();
 LoadScripts();
 
-
 function MakeNavigation() {
     var links = document.querySelectorAll('a');
     if (links) {
@@ -24,7 +23,7 @@ function MakeNavigation() {
                         if (url && url != '#' && url != '#!') {
                             LoadPages(url);
                         } else {
-                            return true;
+                            PageNotFound();
                         }
                     }    
             });
@@ -44,44 +43,15 @@ function LoadPages(url) {
     })
     .catch((error) => {
         console.log(error)
+        PageNotFound();
     });
 }
 
+function PageNotFound() {
+    document.getElementById('app').innerHTML = '<main class="content-area text-center"><p>Página não encontrada.</p></main>'; 
+}
+
 function LoadScripts() {
-
-    // dropdowns
-    M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {});
-
-    // sidebar
-    M.Sidenav.init(document.querySelectorAll('.sidenav'), {});
-
-    //modal
-    M.Modal.init(document.querySelectorAll('.modal'), {});
-
-    // selects
-    M.FormSelect.init(document.querySelectorAll('select'), {});
-
-    // chips
-    M.Chips.init(document.querySelectorAll('.chips'), {
-        autocompleteOptions: {
-            data: {
-                'Luciano Coelho': null,
-                'Sabrina Bet': null,
-                'Fogaça': null
-            },
-            limit: Infinity,
-            minLength: 1
-        },
-        placeholder: 'Add Professor',
-        secondaryPlaceholder: '+ Professor',
-        onChipAdd: function() {
-            M.updateTextFields();
-        }
-    });
-
-    // datepicker
-    M.Datepicker.init(document.querySelectorAll('.datepicker'), {
-        container: document.body
-    });
-
+    M.AutoInit();
+    M.updateTextFields();
 }

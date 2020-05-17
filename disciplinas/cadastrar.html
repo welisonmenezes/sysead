@@ -1,165 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetim</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/vendors/materialize/materialize.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-
-</head>
-
-<body>
-
-    <nav id="nav-mobile" class="sidenav sidenav-fixed">
-        <div class="box-logo">
-            <img src="../assets/img/logo-ead1.png">
-        </div>
-        <ul class="main-menu">
-            <li>
-                <h6>EAD</h6>
-                <ul>
-                    <li>
-                        <a href="listar.html">Disciplinas</a>
-                    </li>
-                    <li>
-                        <a href="../periodos/listar.html">Períodos Letivo</a>
-                    </li>
-                    <li>
-                        <a href="#!">Turmas</a>
-                    </li>
-                    <li>
-                        <a href="#!">Unidades</a>
-                    </li>
-                    <li>
-                        <a href="#!">Tarefas</a>
-                    </li>
-                    <li>
-                        <a href="#!">Fóruns</a>
-                    </li>
-                    <li>
-                        <a href="#!">Atividades</a>
-                    </li>
-                    <li>
-                        <a href="#!">Notas</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Usuários</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Usuários</a>
-                    </li>
-                    <li>
-                        <a href="#!">Grupos</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Biblioteca e Mídias</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Biblioteca</a>
-                    </li>
-                    <li>
-                        <a href="#!">Midias</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h6>Chats e Canais</h6>
-                <ul>
-                    <li>
-                        <a href="#!">Chats</a>
-                    </li>
-                    <li>
-                        <a href="#!">Canais</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-    </nav>
-
-    <header class="fixed-top">
-        <div>
-            <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only"><i
-                    class="material-icons">menu</i></a>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 text-right">
-                    <a class='dropdown-trigger' href='#' data-target='dropdown1'>Welison Menezes</a>
-                    <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">Logout</a></li>
-                    </ul>
+<main class="content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col s5">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Cadastrar Disciplina</h4>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <main class="content-area">
-
-        <form class="container">
-            <div class="row">
-                <div class="col s5">
-                    <div class="row">
-                        <div class="col s12">
-                            <h4>Cadastrar Disciplina</h4>
-                        </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="nome" type="text" class="validate">
+                        <label for="nome" class="">Nome</label>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="nome" type="text" class="validate">
-                            <label for="nome" class="">Nome</label>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="descricao" type="text" class="validate">
+                        <label for="descricao" class="">Descrição</label>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="descricao" type="text" class="validate">
-                            <label for="descricao" class="">Descrição</label>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s10">
+                        <div class="chips chips chips-autocomplete"></div>
                     </div>
-
-                    <div class="row">
-                        <div class="input-field col s10">
-                            <div class="chips chips chips-autocomplete"></div>
-                        </div>
-                        <div class="col s2">
-                            <br>
-                            <a class="btn-floating btn waves-effect waves-light modal-trigger" href="#modal1">
-                                <i class="material-icons">add</i>
-                            </a>
-                        </div>
+                    <div class="col s2">
+                        <br>
+                        <button class="btn-floating btn waves-effect waves-light modal-trigger" data-target="modal1">
+                            <i class="material-icons">add</i>
+                        </button>
                     </div>
-
-                    <div class="row">
-                        <div class="file-field input-field s12">
-                            <div class="btn">
-                                <span>File</span>
-                                <input type="file">
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" placeholder="Imagem de capa">
-                            </div>
+                </div>
+                <div class="row">
+                    <div class="file-field input-field s12">
+                        <div class="btn">
+                            <span>File</span>
+                            <input type="file">
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <a href="listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
-                            <button class="waves-effect waves-light btn">Cadastrar</button>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Imagem de capa">
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <a href="disciplinas/listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
+                        <button type="button" class="waves-effect waves-light btn">Cadastrar</button>
+                    </div>
+                </div>
             </div>
-        </form>
-
-    </main>
-
+        </div>
+    </div>
     <div id="modal1" class="modal modal-fixed-footer">
         <div class="modal-content">
             <form class="container">
@@ -213,13 +103,7 @@
         <div class="modal-footer">
             <button class="waves-effect waves-light btn modal-close blue">Cadastrar</button>
             <button class="waves-effect waves-light btn modal-close">Cadastrar e Selecionar</button>
-            <a href="#!" class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</a>
+            <button class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</button>
         </div>
     </div>
-
-
-    <script src="../assets/vendors/materialize/materialize.min.js"></script>
-    <script src="../assets/js/app.js"></script>
-</body>
-
-</html>
+</main>
