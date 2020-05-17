@@ -75,6 +75,9 @@
 .box-logo {
     padding: 10px 32px;
 }
+.box-logo a {
+    display: block;
+}
 .box-logo img{
     max-width: 100px;
 }
@@ -88,6 +91,10 @@
     font-size: 20px;
     font-weight: bold;
     padding: 0 32px;
+}
+.main-menu a.active {
+    background-color: #26a69a !important;
+    color: #fff;
 }
 
 .form-filter .btn-flat {

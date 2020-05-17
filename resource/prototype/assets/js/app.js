@@ -32,6 +32,10 @@ function AddNavEvent(evt) {
             new_el = evt.path[index];
             limit--;
         }
+        if (new_el.classList.contains('menu-item')) {
+            removeAllActiveLink();
+            new_el.classList.add('active');
+        }
         if (! new_el.classList.contains('without-navigation')) {
             var url = new_el.getAttribute('href');
             if (url && url != '#' && url != '#!') {
@@ -40,7 +44,6 @@ function AddNavEvent(evt) {
                 PageNotFound();
             }
         }
-        
     }    
 }
 
@@ -84,6 +87,18 @@ function PreventPagination() {
     if (links) {
         [].forEach.call(links, function(link) {
             link.classList.add('without-navigation');
+        });
+    }
+}
+
+/*
+ * REMOVE CLASS 'active' FROM EACH MENU ITEM
+ */
+function removeAllActiveLink() {
+    links = document.querySelectorAll('a.menu-item');
+    if (links) {
+        [].forEach.call(links, function(link) {
+            link.classList.remove('active');
         });
     }
 }
