@@ -1,24 +1,68 @@
-document.addEventListener('DOMContentLoaded', function () {
+MakeNavigation();
+LoadScripts();
+
+
+function MakeNavigation() {
+    var links = document.querySelectorAll('a');
+    if (links) {
+        console.log('make');
+        [].forEach.call(links, function(link) {
+            link.addEventListener('click', function(evt) {
+                evt.stopPropagation();
+                evt.preventDefault();
+                    var el = evt.target
+                    if (el) {
+                        index = 0
+                        limit = 10000;
+                        new_el = evt.path[index];
+                        while (! new_el.getAttribute('href') || limit <= 0) {
+                            index++;
+                            new_el = evt.path[index];
+                            limit--;
+                        }
+                        var url = new_el.getAttribute('href');
+                        if (url && url != '#' && url != '#!') {
+                            LoadPages(url);
+                        } else {
+                            return true;
+                        }
+                    }    
+            });
+        });
+    }
+}
+
+function LoadPages(url) {
+    fetch(url)
+    .then((response) => response.text())
+    .then((html) => {
+        document.getElementById('app').innerHTML = html;
+        MakeNavigation();
+        setTimeout(function() {
+            LoadScripts();
+        },200);
+    })
+    .catch((error) => {
+        console.log(error)
+    });
+}
+
+function LoadScripts() {
 
     // dropdowns
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, {});
+    M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {});
 
     // sidebar
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {});
+    M.Sidenav.init(document.querySelectorAll('.sidenav'), {});
 
     //modal
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, {});
+    M.Modal.init(document.querySelectorAll('.modal'), {});
 
     // selects
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, {});
+    M.FormSelect.init(document.querySelectorAll('select'), {});
 
     // chips
-    var elems = document.querySelectorAll('.chips');
-    var instances = M.Chips.init(elems, {
+    M.Chips.init(document.querySelectorAll('.chips'), {
         autocompleteOptions: {
             data: {
                 'Luciano Coelho': null,
@@ -35,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    var elems = document.querySelectorAll('.datepicker');
-    var instances = M.Datepicker.init(elems, {
+    // datepicker
+    M.Datepicker.init(document.querySelectorAll('.datepicker'), {
         container: document.body
     });
-});
 
+}
