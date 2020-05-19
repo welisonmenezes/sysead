@@ -48,6 +48,11 @@
                     <div class="col s8">
                         <h4>Respostas</h4>
                     </div>
+                    <div class="col s4 text-right">
+                        <button class="btn-floating btn waves-effect waves-light modal-trigger" data-target="modal3">
+                            <i class="material-icons left">search</i>
+                        </button>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col s12">
@@ -119,6 +124,157 @@
         </div>
         <div class="modal-footer">
             <button class="btn waves-effect waves-light blue-grey lighten-2 modal-close">Fechar</button>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div>
+                            <div class="input-field col valign-wrapper">
+                                <h6>Filtar por:</h6>
+                            </div>
+                            <div class="input-field col s3">
+                                <input type="text" class="validate" placeholder="Nome">
+                            </div>
+                            <div class="input-field col s3">
+                                <input type="text" class="validate" placeholder="Data de Entrega">
+                            </div>
+                            <div class="input-field col s3">
+                                <input type="text" class="validate" placeholder="Nota">
+                            </div>
+                            <div class="input-field col s1 valign-wrapper">
+                                <button class="btn-flat" type="submit" name="action">
+                                    <i class="material-icons right">search</i>
+                                </button>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Data de Entrega</th>
+                                    <th>Nota</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>10</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>7</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>7</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>7</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>5</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>9</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>8</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>10</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>7</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td>10</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <ul class="pagination">
+                                <li class="disabled">
+                                    <a href="#!"><i class="material-icons">chevron_left</i></a>
+                                </li>
+                                <li class="active"><a href="#!">1</a></li>
+                                <li class="waves-effect"><a href="#!">2</a></li>
+                                <li class="waves-effect"><a href="#!">3</a></li>
+                                <li class="waves-effect"><a href="#!">4</a></li>
+                                <li class="waves-effect"><a href="#!">5</a></li>
+                                <li class="waves-effect">
+                                    <a href="#!"><i class="material-icons">chevron_right</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</button>
         </div>
     </div>
 </main>
