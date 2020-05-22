@@ -17,8 +17,8 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="nome" type="text" class="validate">
-                        <label for="nome" class="">Nome</label>
+                        <input id="titulo" type="text" class="validate">
+                        <label for="titulo" class="">Título</label>
                     </div>
                 </div>
                 <div class="row">
@@ -27,26 +27,17 @@
                         <label for="descricao" class="">Descrição</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col s10">
-                        <div class="chips chips chips-autocomplete"></div>
-                    </div>
-                    <div class="col s2">
-                        <br>
-                        <button class="btn-floating btn waves-effect waves-light modal-trigger" data-target="modal1">
-                            <i class="material-icons">add</i>
-                        </button>
-                    </div>
+                <div class="input-field col12">
+                    <select name="select">
+                        <option value="">Tipo</option>
+                        <option value="">Tipo 1</option>
+                        <option value="">Tipo 2</option>
+                    </select>
                 </div>
                 <div class="row">
-                    <div class="file-field input-field s12">
-                        <div class="btn">
-                            <span>File</span>
-                            <input type="file">
-                        </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" placeholder="Imagem de capa">
-                        </div>
+                    <div class="input-field col s12">
+                        <textarea id="conteudo" class="materialize-textarea"></textarea>
+                        <label for="conteudo" class="">Conteúdo</label>
                     </div>
                 </div>
                 <div class="row">
