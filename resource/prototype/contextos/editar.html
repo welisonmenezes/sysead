@@ -1,6 +1,15 @@
 <main class="content-area">
     <div class="container">
         <div class="row">
+            <div class="col">
+                <div class="breadcrumb-wrap">
+                    <a href="contextos/listar.html" class="breadcrumb">Contextos</a>
+                    <a href="contextos/ver.html" class="breadcrumb">Ver Contexto</a>
+                    <span class="breadcrumb">Editar Contexto</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col s5">
                 <div class="row">
                     <div class="col s12">
@@ -21,21 +30,21 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <label for="descricao" class="">Data de Início</label>
+                        <label for="descricao" class="">Data Início</label>
                         <input type="text" class="datepicker" placeholder="05/05/2020">
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                        <label for="descricao" class="">Data de Expiração</label>
+                        <label for="descricao" class="">Data Fim</label>
                         <input type="text" class="datepicker" placeholder="15/05/2020">
                         </div>
                     </div>
                 <div class="row">
                     <div class="input-field col s12">
+                        <a href="contextos/ver.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
                         <button class="waves-effect waves-light btn">Editar</button>
-                        <a href="periodos/ver.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
-                        <a href="periodos/listar.html" class="waves-effect waves-light btn blue">Ver todos</a>
+                        <a href="contextos/listar.html" class="waves-effect waves-light btn blue">Ver todos</a>
                     </div>
                 </div>
             </div>
@@ -45,10 +54,10 @@
                         <h4>Turmas</h4>
                     </div>
                     <div class="col s4 text-right">
-                        <button class="btn-floating btn waves-effect waves-light modal-trigger" data-target="modal3">
+                        <button class="btn-floating btn waves-effect waves-light modal-trigger" data-target="modalselect">
                             <i class="material-icons left">search</i>
                         </button>
-                        <button class="btn-floating btn waves-effect waves-light modal-trigger" data-target="modal2">
+                        <button class="btn-floating btn waves-effect waves-light modal-trigger" data-target="modaladd">
                             <i class="material-icons left">add</i>
                         </button>
                     </div>
@@ -146,72 +155,7 @@
             <button class="btn waves-effect waves-light blue-grey lighten-2 modal-close">Cancelar</button>
         </div>
     </div>
-    <div id="modaldeletar" class="modal">
-        <div class="modal-content">
-            <h4>Deseja realmente deletar este item?</h4>
-        </div>
-        <div class="modal-footer">
-            <button class="waves-effect waves-light btn red modal-close">Deletar</button>
-            <button class="btn waves-effect waves-light blue-grey lighten-2 modal-close">Cancelar</button>
-        </div>
-    </div>
-    <div id="modal1" class="modal modal-fixed-footer">
-        <div class="modal-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <div class="row">
-                            <div class="col s12">
-                                <h4>Cadastrar Professor</h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="nome" type="text" class="validate">
-                                <label for="nome" class="">Nome</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="email" class="">Email</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="cpf" type="text" class="validate">
-                                <label for="cpf" class="">CPF</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="telefone" type="text" class="validate">
-                                <label for="telefone" class="">Telefone</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="matricula" type="text" class="validate">
-                                <label for="matricula" class="">Matrícula</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="senha" type="password" class="validate">
-                                <label for="senha" class="">Senha</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <button class="waves-effect waves-light btn modal-close blue">Cadastrar</button>
-            <button class="waves-effect waves-light btn modal-close">Cadastrar e Selecionar</button>
-            <button class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</button>
-        </div>
-    </div>
-    <div id="modal2" class="modal modal-fixed-footer">
+    <div id="modaladd" class="modal modal-fixed-footer">
         <div class="modal-content">
             <div class="container">
                 <div class="row">
@@ -276,7 +220,7 @@
             <button class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</button>
         </div>
     </div>
-    <div id="modal3" class="modal modal-fixed-footer">
+    <div id="modalselect" class="modal modal-fixed-footer">
         <div class="modal-content">
             <div class="container">
                 <div class="row">

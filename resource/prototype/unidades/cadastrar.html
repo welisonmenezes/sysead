@@ -1,6 +1,14 @@
 <main class="content-area">
     <div class="container">
         <div class="row">
+            <div class="col">
+                <div class="breadcrumb-wrap">
+                    <a href="unidades/listar.html" class="breadcrumb">Unidades</a>
+                    <span class="breadcrumb">Cadastrar Unidade</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col s5">
                 <div class="row">
                     <div class="col s12">
@@ -22,9 +30,22 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <select id="status">
-                            <option value="">Selecione um status</option>
+                            <option value="">Status</option>
+                            <option value="">Status 1</option>
+                            <option value="">Status 2</option>
                         </select>
-                        <label for="status" class="">Descrição</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s10">
+                        <input id="turma" type="text" class="validate">
+                        <label for="turma" class="">Turma</label>
+                    </div>
+                    <div class="col s2">
+                        <br>
+                        <button class="btn-floating btn waves-effect waves-light modal-trigger" data-target="modalselect">
+                            <i class="material-icons">search</i>
+                        </button>
                     </div>
                 </div>
                 <div class="row">
@@ -44,6 +65,132 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="modalselect" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div>
+                            <div class="input-field col s12">
+                                <input type="text" id="search">
+                                <label for="search" class="">Buscar</label>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Data Criação</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>name-here</td>
+                                    <td>99/99/9999</td>
+                                    <td class="text-right">
+                                        <button class="waves-effect waves-light btn btn-small">selecionar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <ul class="pagination">
+                                <li class="disabled">
+                                    <a href="#!"><i class="material-icons">chevron_left</i></a>
+                                </li>
+                                <li class="active"><a href="#!">1</a></li>
+                                <li class="waves-effect"><a href="#!">2</a></li>
+                                <li class="waves-effect"><a href="#!">3</a></li>
+                                <li class="waves-effect"><a href="#!">4</a></li>
+                                <li class="waves-effect"><a href="#!">5</a></li>
+                                <li class="waves-effect">
+                                    <a href="#!"><i class="material-icons">chevron_right</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn waves-effect waves-light red lighten-2 modal-close">Cancelar</button>
         </div>
     </div>
 </main>

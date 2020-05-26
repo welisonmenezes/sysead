@@ -49,7 +49,7 @@
 .content-area .container {
     width: 100%;
     max-width: 100%;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
 }
 .content-area.no-sidebar {
     padding-left: 0;
@@ -106,6 +106,26 @@
 
 .text-center {
     text-align: center;
+}
+
+.breadcrumb-wrap {
+    margin-bottom: 20px;
+}
+.breadcrumb,
+.breadcrumb:before {
+    color: #26a69a;
+    font-size: 14px;
+}
+.breadcrumb:before {
+    margin: 0;
+    vertical-align: middle;
+}
+.breadcrumb:last-child {
+    color: rgba(0,0,0,0.87);
+}
+
+textarea.materialize-textarea {
+    min-height: 150px;
 }
 
 @media (max-width: 993px) {
