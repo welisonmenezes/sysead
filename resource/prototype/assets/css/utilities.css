@@ -36,9 +36,10 @@
     width: 20px;
     display: inline-block;
     vertical-align: middle;
-}
-.fake-link.green-text {
     color: #b5b5c3 !important;
+}
+.fake-link.danger:hover {
+    color: #F44336 !important;
 }
 .fake-link.green-text:hover {
     color: #2bbbad !important;
@@ -50,10 +51,9 @@
     font-size: 16px;
 }
 
-.danger {
+button.danger {
     color: #F44336 !important;
 }
-
 
 ::-webkit-scrollbar {
     width: 5px;
