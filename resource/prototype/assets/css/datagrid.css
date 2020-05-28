@@ -1,0 +1,29 @@
+td, th {
+    padding: 5px 10px;
+}
+tr {
+    border-bottom: none;
+}
+tr.odd {
+    background-color: #f9f9f9;
+}
+thead tr {
+    border-bottom: 1px solid #cfd8dc;
+}
+thead tr th {
+    padding: 6px;
+}
+
+table {
+    font-size: 14px;
+}
+
+table a {
+    color: #b5b5c3;
+}
+table a i.material-icons {
+    font-size: 20px;
+}
+table a:hover {
+    color: #2bbbad;
+}

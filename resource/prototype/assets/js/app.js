@@ -77,6 +77,7 @@ function PageNotFound() {
 function LoadScripts() {
     M.AutoInit();
     M.updateTextFields();
+    openMoreOptions();
 }
 
 /*
@@ -99,6 +100,28 @@ function removeAllActiveLink() {
     if (links) {
         [].forEach.call(links, function(link) {
             link.classList.remove('active');
+        });
+    }
+}
+
+
+function openMoreOptions() {
+    btnOptions = document.querySelectorAll('.open-more-options');
+    if (btnOptions) {
+        [].forEach.call(btnOptions, function(btn) {
+            btn.addEventListener('click', function(evt) {
+                evt.stopPropagation();
+                var parent = evt.target.parentElement;
+                if (parent) {
+                    parent.classList.add('opened');
+                }
+            });
+        });
+        document.querySelector('body').addEventListener('click', function() {
+            options = document.querySelectorAll('.more-options.opened');
+            [].forEach.call(options, function(opt) {
+                opt.classList.remove('opened');
+            });
         });
     }
 }
