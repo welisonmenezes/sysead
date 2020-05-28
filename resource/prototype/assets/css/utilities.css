@@ -25,3 +25,24 @@
 .danger {
     color: #F44336 !important;
 }
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #ccc;
+}
+.scrollbar-big::-webkit-scrollbar {
+    width: 3px;
+    background: #26a69a;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-track {}
+::-webkit-scrollbar-track-piece {}
+::-webkit-scrollbar-thumb {
+    background: #26a69a;
+}
+::-webkit-scrollbar-corner {}
+::-webkit-resizer {}

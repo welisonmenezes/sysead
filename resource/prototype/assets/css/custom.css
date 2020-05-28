@@ -28,6 +28,15 @@ i.left {
     background-color: #26a69a !important;
     color: #fff;
 }
+.main-menu h6 {
+    text-transform: uppercase;
+    border-bottom: solid #ededed 1px;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    background: #f8f8f8;
+}
 
 .breadcrumb-wrap {
     margin-bottom: 0;
@@ -69,7 +78,7 @@ i.left {
     top: 40px;
     right: 10px;
     z-index: 99;
-    min-width: 180px;
+    min-width: 190px;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -132,5 +141,5 @@ i.left {
     height: 36px;
     line-height: 36px;
     margin-right: 8px;
-    font-size: 20px;
+    font-size: 16px;
 }

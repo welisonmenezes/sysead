@@ -75,4 +75,5 @@
 .sidenav li > a {
     height: 36px;
     line-height: 36px;
+    font-weight: normal;
 }
