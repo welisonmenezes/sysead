@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col s12 d-flex">
                 <div class="breadcrumb-wrap">
-                    <a href="suas-disciplinas/listar.html" class="breadcrumb">Suas Disciplinas</a>
-                    <span class="breadcrumb">Detalhes Disciplina</span>
+                    <a href="suas-turmas/listar.html" class="breadcrumb">Suas Turmas</a>
+                    <span class="breadcrumb">Detalhes Turma</span>
                 </div>
             </div>
         </div>
@@ -14,10 +14,10 @@
                     <div class="card-content">
                         <div class="row">
                             <div class="col s6">
-                                <h1>Detalhes Disciplina</h1>
+                                <h1>Detalhes Turma</h1>
                             </div>
                             <div class="col s6 text-right">
-                                <a href="suas-disciplinas/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                <a href="suas-turmas/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
                                     <i class="material-icons left">keyboard_backspace</i>
                                     Voltar
                                 </a>
@@ -25,33 +25,9 @@
                                     <i class="material-icons left open-more-options">more_vert</i>
                                     <ul>
                                         <li>
-                                            <button class="btn-flat insert-sub-item" data-subitem="suas-disciplinas/sub-itens/unidades.html">
-                                                <i class="material-icons left">flag</i>
-                                                Gerenciar Unidades
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button class="btn-flat insert-sub-item" data-subitem="suas-disciplinas/sub-itens/conteudos.html">
-                                                <i class="material-icons left">menu_book</i>
-                                                Gerenciar Conteúdo
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button class="btn-flat insert-sub-item" data-subitem="suas-disciplinas/sub-itens/tarefas.html">
-                                                <i class="material-icons left">check_box</i>
-                                                Gerenciar Tarefas
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button class="btn-flat insert-sub-item" data-subitem="suas-disciplinas/sub-itens/foruns.html">
-                                                <i class="material-icons left">forum</i>
-                                                Gerenciar Fóruns
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button class="btn-flat insert-sub-item" data-subitem="suas-disciplinas/sub-itens/turmas.html">
-                                                <i class="material-icons left">school</i>
-                                                Ver Turmas
+                                            <button class="btn-flat insert-sub-item" data-subitem="suas-turmas/sub-itens/alunos.html">
+                                                <i class="material-icons left">people</i>
+                                                Ver Alunos
                                             </button>
                                         </li>
                                     </ul>
@@ -60,21 +36,44 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="nome" type="text" class="validate" value="Desenvolvimento Web" disabled>
+                                <input id="nome" type="text" class="validate" value="Sistemas 3ª Fase 2020.A" disabled>
                                 <label for="nome">Nome</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="desc" class="materialize-textarea" disabled>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias modi eum officiis odit nesciunt eveniet fuga facere maiores iure ipsum.</textarea>
+                                <input id="start" type="text" class="validate" value="00/00/0000" disabled>
+                                <label for="start">Data de Início</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="finish" type="text" class="validate" value="00/00/0000" disabled>
+                                <label for="finish">Data de Expiração</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="desc" class="materialize-textarea" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, itaque! Nihil assumenda placeat amet fugiat neque voluptates a est minima.</textarea>
                                 <label for="desc" class="">Descrição</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col s12">
-                                <div class="box-avatar">
-                                    <img src="assets/img/javascript-1.png" alt="alt">
-                                </div>
+                            <div class="input-field col s12">
+                                <select disabled>
+                                    <option value="">Turma</option>
+                                    <option value="1" selected>Desenvolvimento Web</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select disabled>
+                                    <option value="">Professor</option>
+                                    <option value="1" selected>Luciano Coelho</option>
+                                    <option value="2">Option 2</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row">
@@ -95,7 +94,7 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <a href="suas-disciplinas/editar.html" class="waves-effect waves-light btn btn-small blue">
+                                <a href="suas-turmas/editar.html" class="waves-effect waves-light btn btn-small blue">
                                     <i class="material-icons left">save</i>
                                     Salvar
                                 </a>

@@ -46,6 +46,7 @@
 }
 .fake-link i {
     vertical-align: middle;
+    font-size: 20px;
 }
 .fake-link.green-text i {
     font-size: 16px;
