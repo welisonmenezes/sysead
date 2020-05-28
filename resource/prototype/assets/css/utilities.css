@@ -17,3 +17,11 @@
 .d-inline-block {
     display: inline-block;
 }
+
+.fake-link {
+    cursor: pointer;
+}
+
+.danger {
+    color: #F44336 !important;
+}

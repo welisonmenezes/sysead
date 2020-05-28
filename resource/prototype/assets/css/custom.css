@@ -80,9 +80,6 @@ i.left {
     width: 100%;
     text-align: left;
 }
-.more-options ul .btn-flat.danger {
-    color: #F44336 !important;
-}
 .more-options ul .btn-flat i {
     font-size: 16px;
 }
@@ -98,7 +95,7 @@ i.left {
     font-size: 16px;
 }
 .modal-footer {
-    height: 46px !important;
+    height: auto !important;
 }
 .modal-footer > div {
     padding: 0 15px;
@@ -106,6 +103,16 @@ i.left {
 .modal-footer .btn {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
+}
+
+.modal.bottom-sheet {
+    max-height: 70%;
+}
+
+.modal-fixed-footer .modal-footer {
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .dropdown-content li {

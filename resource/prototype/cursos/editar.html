@@ -9,14 +9,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col s5">
+            <div class="col s6">
                 <div class="card">
                     <div class="card-content">
                         <div class="row">
-                            <div class="col s8">
+                            <div class="col s6">
                                 <h1>Editar Curso</h1>
                             </div>
-                            <div class="col s4 text-right">
+                            <div class="col s6 text-right">
                                 <a href="cursos/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
                                     <i class="material-icons left">keyboard_backspace</i>
                                     Voltar
@@ -25,15 +25,15 @@
                                     <i class="material-icons left open-more-options">more_vert</i>
                                     <ul>
                                         <li>
-                                            <a href="usuarios/listar.html" class="btn-flat">
+                                            <button class="btn-flat insert-sub-item" data-subitem="cursos/sub-itens/alunos.html">
                                                 <i class="material-icons left">people</i>
-                                                Ver Alunos
-                                            </a>
+                                                Gerenciar Alunos
+                                            </button>
                                         </li>
                                         <li>
                                             <a href="disciplinas/listar.html" class="btn-flat">
                                                 <i class="material-icons left">folder_special</i>
-                                                Ver Disciplinas
+                                                Gerenciar Disciplinas
                                             </a>
                                         </li>
                                         <li>
@@ -77,6 +77,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col s6">
+                <div id="subitem"></div>
             </div>
         </div>
     </div>

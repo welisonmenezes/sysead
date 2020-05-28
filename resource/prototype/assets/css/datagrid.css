@@ -4,8 +4,9 @@ td, th {
 tr {
     border-bottom: none;
 }
-tr.odd {
-    background-color: #f9f9f9;
+tr.odd,
+tr.odd td {
+    background-color: #f6f6f6;
 }
 thead tr {
     border-bottom: 1px solid #cfd8dc;
@@ -26,4 +27,10 @@ table a i.material-icons {
 }
 table a:hover {
     color: #2bbbad;
+}
+
+.table-select th:last-child,
+.table-select td:last-child {
+    width: 90px;
+    text-align: center;
 }

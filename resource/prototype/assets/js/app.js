@@ -78,6 +78,7 @@ function LoadScripts() {
     M.AutoInit();
     M.updateTextFields();
     openMoreOptions();
+    OnInsertSubItem();
 }
 
 /*
@@ -123,5 +124,74 @@ function openMoreOptions() {
                 opt.classList.remove('opened');
             });
         });
+    }
+}
+
+
+
+function OnInsertSubItem() {
+    var buttons = document.querySelectorAll('.insert-sub-item');
+    if (buttons) {
+        PreventPagination();
+        [].forEach.call(buttons, function(btn) {
+            btn.removeEventListener('click', InsertSubItem);
+            btn.addEventListener('click', InsertSubItem);
+        });
+    }
+}
+
+
+function InsertSubItem(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    var el = evt.target;
+    if (el) {
+        index = 0
+        limit = 10000;
+        new_el = evt.path[index];
+        while (! new_el.getAttribute('data-subitem') || limit <= 0) {
+            index++;
+            new_el = evt.path[index];
+            limit--;
+        }
+        var url = new_el.getAttribute('data-subitem');
+        if (url && url != '#' && url != '#!') {
+            LoadSubItem(url);
+        } else {
+            PageNotFound();
+        }
+    }    
+}
+
+function LoadSubItem(url) {
+    fetch(url)
+    .then((response) => response.text())
+    .then((html) => {
+        document.getElementById('subitem').innerHTML = html;
+        LoadSubItemScripts()
+    })
+    .catch((error) => {
+        console.log(error)
+        PageNotFound();
+    });
+}
+
+function LoadSubItemScripts() {
+    M.AutoInit();
+    M.updateTextFields();
+    RemoveSubItem();
+}
+
+function RemoveSubItem() {
+    var btn = document.querySelector('#remove-subitem');
+    if (btn)
+    {
+        btn.addEventListener('click', function() {
+            console.log('xxxx')
+            var subitem = document.querySelector('#subitem-content');
+            if (subitem) {
+                subitem.parentNode.removeChild(subitem);
+            }
+        })
     }
 }

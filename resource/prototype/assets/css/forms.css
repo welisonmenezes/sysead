@@ -13,3 +13,8 @@ textarea.materialize-textarea {
 .row .col.input-field {
     margin: 0 0 0 0;
 }
+
+[type="checkbox"]+span:not(.lever) {
+    padding: 0;
+    width: 18px;
+}
