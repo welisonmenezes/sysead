@@ -2,6 +2,18 @@
     margin-bottom: 30px;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
 .text-right {
     text-align: right;
 }
@@ -20,6 +32,22 @@
 
 .fake-link {
     cursor: pointer;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fake-link.green-text {
+    color: #b5b5c3 !important;
+}
+.fake-link.green-text:hover {
+    color: #2bbbad !important;
+}
+.fake-link i {
+    vertical-align: middle;
+}
+.fake-link.green-text i {
+    font-size: 16px;
 }
 
 .danger {
@@ -46,3 +74,7 @@
 }
 ::-webkit-scrollbar-corner {}
 ::-webkit-resizer {}
+
+.no-margin {
+    margin: 0 !important;
+}

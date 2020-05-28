@@ -143,3 +143,22 @@ i.left {
     margin-right: 8px;
     font-size: 16px;
 }
+
+.tabs .tab a, .tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: #26a69a;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #f8f8f8;
+}
+.tabs .indicator {
+    background-color: #26a69a;
+}
+
+.nice-title {
+    text-transform: uppercase;
+    font-size: 18px !important;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}

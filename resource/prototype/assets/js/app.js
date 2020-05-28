@@ -20,9 +20,12 @@ function MakeNavigation() {
  *   - ELEMENTS WITH 'without-navigation' CLASS WILL NOT BE AFFECTED
  */
 function AddNavEvent(evt) {
+    var el = evt.target
+    if (el && el.classList.contains('link-tab')) {
+        return true;
+    }
     evt.stopPropagation();
     evt.preventDefault();
-    var el = evt.target
     if (el && ! el.classList.contains('without-navigation')) {
         index = 0
         limit = 10000;
