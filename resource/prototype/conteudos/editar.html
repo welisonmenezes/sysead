@@ -1,54 +1,128 @@
 <main class="content-area">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col s12 d-flex">
                 <div class="breadcrumb-wrap">
                     <a href="conteudos/listar.html" class="breadcrumb">Conteúdos</a>
-                    <a href="conteudos/ver.html" class="breadcrumb">Ver Conteúdo</a>
-                    <span class="breadcrumb">Cadastrar Conteúdo</span>
+                    <span class="breadcrumb">Editar Conteúdo</span>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col s5">
-                <div class="row">
-                    <div class="col s12">
-                        <h4>Cadastrar Conteúdo</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="titulo" type="text" class="validate" value="title-here">
-                        <label for="titulo" class="">Título</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="descricao" type="text" class="validate" value="description-here">
-                        <label for="descricao" class="">Descrição</label>
-                    </div>
-                </div>
-                <div class="input-field col12">
-                    <select name="select">
-                        <option value="">Tipo</option>
-                        <option value="" selected>Tipo 1</option>
-                        <option value="">Tipo 2</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <textarea id="conteudo" class="materialize-textarea">content-here</textarea>
-                        <label for="conteudo" class="">Conteúdo</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <a href="conteudos/listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
-                        <button type="button" class="waves-effect waves-light btn">Cadastrar</button>
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6">
+                                <h1>Editar Conteúdo</h1>
+                            </div>
+                            <div class="col s6 text-right">
+                                <a href="conteudos/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                    <i class="material-icons left">keyboard_backspace</i>
+                                    Voltar
+                                </a>
+                                <div class="d-inline-block more-options">
+                                    <i class="material-icons left open-more-options">more_vert</i>
+                                    <ul>
+                                        <li>
+                                            <button class="btn-flat danger modal-trigger" data-target="modaldeletar">
+                                                <i class="material-icons left">delete</i>
+                                                Excluir Conteúdo
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate" value="Artigo sobre HTML 5">
+                                <label for="nome">Título</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="desc" class="materialize-textarea">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi placeat dolor nemo, similique perspiciatis iure est quis! Possimus, eum assumenda.</textarea>
+                                <label for="desc" class="">Descrição</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Tipo</option>
+                                    <option value="1" selected>Artigo</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="article" class="materialize-textarea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, praesentium rem perspiciatis nulla, voluptates sapiente totam impedit suscipit dicta consectetur maxime voluptatem commodi voluptate nemo dolor explicabo, quod quibusdam. Tempora.</textarea>
+                                <label for="article" class="">Artigo</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Início" value="00/00/0000">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Expiração" value="00/00/0000">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Disciplina</option>
+                                    <option value="1" selected>Desenvolvimento Web</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Unidade</option>
+                                    <option value="1" selected>Unidade 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Status</option>
+                                    <option value="1" selected>Aberto</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <a href="conteudos/editar.html" class="waves-effect waves-light btn btn-small blue">
+                                    <i class="material-icons left">save</i>
+                                    Salvar
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col s6">
+                <div id="subitem"></div>
+            </div>
         </div>
     </div>
-
+    <div id="modaldeletar" class="modal modal-small">
+        <div class="modal-content">
+            <h4>Deseja realmente deletar este item?</h4>
+        </div>
+        <div class="modal-footer">
+            <div>
+                <button class="waves-effect waves-light btn btn-small red modal-close">Deletar</button>
+                <button class="btn waves-effect waves-light btn-small blue-grey lighten-2 modal-close">Cancelar</button>
+            </div>
+        </div>
+    </div>
 </main>
