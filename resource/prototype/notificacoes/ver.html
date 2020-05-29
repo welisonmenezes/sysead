@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col s12 d-flex">
                 <div class="breadcrumb-wrap">
-                    <a href="canais/listar.html" class="breadcrumb">Todos os Canais</a>
-                    <span class="breadcrumb">Editar Canal</span>
+                    <a href="notificacoes/listar.html" class="breadcrumb">Notificações</a>
+                    <span class="breadcrumb">Ver Notificação</span>
                 </div>
             </div>
         </div>
@@ -14,10 +14,10 @@
                     <div class="card-content">
                         <div class="row">
                             <div class="col s6">
-                                <h1>Editar Canal</h1>
+                                <h1>Ver Notificação</h1>
                             </div>
                             <div class="col s6 text-right">
-                                <a href="canais/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                <a href="notificacoes/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
                                     <i class="material-icons left">keyboard_backspace</i>
                                     Voltar
                                 </a>
@@ -25,15 +25,21 @@
                                     <i class="material-icons left open-more-options">more_vert</i>
                                     <ul>
                                         <li>
-                                            <button class="btn-flat insert-sub-item" data-subitem="canais/sub-itens/participantes.html">
-                                                <i class="material-icons left">people</i>
-                                                Gerenciar Participantes
+                                            <button class="btn-flat">
+                                                <i class="material-icons left">done_all</i>
+                                                Marcar como lida
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-flat">
+                                                <i class="material-icons left">favorite_border</i>
+                                                Favoritar
                                             </button>
                                         </li>
                                         <li>
                                             <button class="btn-flat danger modal-trigger" data-target="modaldeletar">
                                                 <i class="material-icons left">delete</i>
-                                                Excluir Canal
+                                                Deletar Notificação
                                             </button>
                                         </li>
                                     </ul>
@@ -41,32 +47,29 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col s12">
-                                <input id="nome" type="text" class="validate" value="Grupo de Estudos">
-                                <label for="nome">Nome</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="desc" class="materialize-textarea">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nisi culpa rem, quaerat ab accusamus incidunt saepe in eum dolor!</textarea>
-                                <label for="desc" class="">Descrição</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <select>
-                                    <option value="">Status</option>
-                                    <option value="1" selected>Aberto</option>
-                                    <option value="2">Option 2</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <button class="waves-effect waves-light btn btn-small blue">
-                                    <i class="material-icons left">save</i>
-                                    Salvar
-                                </button>
+                            <div class="col s12">
+                                <h3 class="nice-title small">Tarefa 5 entregue</h3>
+                                <p>
+                                    <b>Tipo:</b> alerta
+                                </p>
+                                <p>
+                                    <b>Origin:</b> Dandara Carioca
+                                </p>
+                                <p>
+                                    <b>Data:</b> 00/00/0000
+                                </p>
+                                <p>
+                                    <b>Status:</b> lida
+                                </p>
+                                <p>
+                                    <b>Descrição:</b><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquam itaque tempore neque aut voluptatibus dolor sapiente sed laborum suscipit?
+                                </p>
+                                <br>
+                                <p>
+                                    <button class="waves-effect waves-light btn btn-small">Faça Algo</button>
+                                    <button class="waves-effect waves-light btn btn-small blue-grey">Ignorar</button>
+                                </p>
                             </div>
                         </div>
                     </div>
