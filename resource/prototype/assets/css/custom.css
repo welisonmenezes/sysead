@@ -165,3 +165,14 @@ i.left {
 .nice-title.small {
     font-size: 16px !important;
 }
+
+.preview-file {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.preview-file img {
+    max-height: 100px;
+    margin-right: 20px;
+}
