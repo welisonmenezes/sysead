@@ -1,0 +1,336 @@
+<main class="content-area">
+    <div class="container">
+
+        <ul class="tabs tabs-fixed-width tab-demo z-depth-1 mt-30">
+            <li class="tab">
+                <a href="#infos" class="link-tab">Informações</a>
+            </li>
+            <li class="tab">
+                <a href="#seguranca" class="link-tab">Segurança</a>
+            </li>
+            <li class="tab">
+                <a href="#custom" class="link-tab">Customizações</a>
+            </li>
+        </ul>
+
+        <div id="infos" class="col s12">
+            <div class="card mt-0 pt-30">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col s12">
+                            <h1>Informações da Instituição</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="title" type="text" class="validate">
+                            <label for="title">Nome</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="desc" type="text" class="validate">
+                            <label for="desc">Descrição</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="email" type="text" class="validate">
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="phone" type="text" class="validate">
+                            <label for="phone">Telefone</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="estado" type="text" class="validate">
+                            <label for="estado">Estado</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="cidade" type="text" class="validate">
+                            <label for="cidade">Cidade</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="bairro" type="text" class="validate">
+                            <label for="bairro">Bairro</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="rua" type="text" class="validate">
+                            <label for="rua">Rua</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="numero" type="text" class="validate">
+                            <label for="numero">Número</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="comp" type="text" class="validate">
+                            <label for="comp">Complemento</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button class="waves-effect waves-light btn btn-small blue">
+                                <i class="material-icons left">save</i>
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="seguranca" class="col s12">
+            <div class="card mt-0 pt-30">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col s5">
+                            <div class="row">
+                                <div class="col s12">
+                                    <h2 class="nice-title">Blacklist</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="type" type="text" class="validate">
+                                    <label for="type">Tipo</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="value" type="text" class="validate">
+                                    <label for="value">Valor</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="alvo" type="text" class="validate">
+                                    <label for="alvo">Alvo</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <button class="waves-effect waves-light btn btn-small blue text-left">
+                                        <i class="material-icons left">save</i>
+                                        Salvar Item
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 offset-s1">
+                            <div class="row">
+                                <div class="col s12">
+                                    <h2 class="nice-title">Items na Blacklist</h2>
+                                </div>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Tipo</th>
+                                        <th>Valor</th>
+                                        <th>Alvo</th>
+                                        <th class="text-right">Remover<br>da Blacklist</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link  green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>1</td>
+                                        <td>IP</td>
+                                        <td>9999.99999.9999.99</td>
+                                        <td>acesso</td>
+                                        <td class="text-right">
+                                            <span class="fake-link danger">
+                                                <i class="material-icons">clear</i>
+                                            </span>
+                                            <span class="fake-link green-text">
+                                                <i class="material-icons">edit</i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                    <li class="active"><a href="#!">1</a></li>
+                                    <li class="waves-effect"><a href="#!">2</a></li>
+                                    <li class="waves-effect"><a href="#!">3</a></li>
+                                    <li class="waves-effect"><a href="#!">4</a></li>
+                                    <li class="waves-effect"><a href="#!">5</a></li>
+                                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="custom" class="col s12">
+            <div class="card mt-0 pt-30">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col s12">
+                            <h1>Customizações</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s5">
+                            <input id="title" type="text" class="validate">
+                            <label for="title">Cor do texto</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s5">
+                            <input id="title" type="text" class="validate">
+                            <label for="title">Cor do texto</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s5">
+                            <input id="title" type="text" class="validate">
+                            <label for="title">Cor do texto</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s5">
+                            <button class="waves-effect waves-light btn btn-small blue">
+                                <i class="material-icons left">save</i>
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>

@@ -1,0 +1,9 @@
+@media (max-width: 993px) {
+    .hide-on-large-only {
+        display: block !important;
+    }
+    .content-area,
+    .fixed-top {
+        padding-left: 0;
+    }
+}
