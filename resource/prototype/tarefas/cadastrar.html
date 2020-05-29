@@ -1,54 +1,91 @@
 <main class="content-area">
     <div class="container">
         <div class="row">
-            <div class="row">
-                <div class="col">
-                    <div class="breadcrumb-wrap">
-                        <a href="tarefas/listar.html" class="breadcrumb">Tarefas</a>
-                        <span class="breadcrumb">Adicionar Tarefa</span>
-                    </div>
+            <div class="col s12 d-flex">
+                <div class="breadcrumb-wrap">
+                    <a href="tarefas/listar.html" class="breadcrumb">Tarefas</a>
+                    <span class="breadcrumb">Cadastrar Tarefa</span>
                 </div>
             </div>
-            <div class="col s5">
-                <div class="row">
-                    <div class="col s12">
-                        <h1>Adicionar Tarefa</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="nome" type="text" class="validate">
-                        <label for="nome" class="">Nome</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="descricao" type="password" class="validate">
-                        <label for="descricao" class="">Descrição</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input type="text" class="datepicker" placeholder="Data de Início">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input type="text" class="datepicker" placeholder="Data de Expiração">
-                    </div>
-                </div>
-                <div class="input-field col s12">
-                    <select placeholder="Status">
-                        <option value="" disabled selected>Status</option>
-                        <option value="1">Aberto</option>
-                        <option value="2">Fechado</option>
-                        <option value="3">Pendente</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <a href="tarefas/listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
-                        <button class="waves-effect waves-light btn">Adicionar</button>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6">
+                                <h1>Cadastrar Tarefa</h1>
+                            </div>
+                            <div class="col s6 text-right">
+                                <a href="tarefas/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                    <i class="material-icons left">keyboard_backspace</i>
+                                    Voltar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate">
+                                <label for="nome">Título</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="desc" class="materialize-textarea"></textarea>
+                                <label for="desc" class="">Enuciado</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nota" type="text" placeholder="Peso">
+                                <label for="nota" class="">Peso <small>(Nota)</small></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Início">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Expiração">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Disciplina</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Unidade</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Status</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <a href="tarefas/editar.html" class="waves-effect waves-light btn btn-small blue">
+                                    <i class="material-icons left">save</i>
+                                    Salvar
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
