@@ -1,73 +1,100 @@
 <main class="content-area">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col s12 d-flex">
                 <div class="breadcrumb-wrap">
-                    <a href="biblioteca/listar.html" class="breadcrumb">Biblioteca</a>
-                    <a href="biblioteca/ver.html" class="breadcrumb">Ver Item</a>
-                    <span class="breadcrumb">Editar Item</span>
+                    <a href="biblioteca/listar.html" class="breadcrumb">Bibliotecas</a>
+                    <span class="breadcrumb">Editar Título</span>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col s4">
-                <div class="row">
-                    <div class="col s12">
-                        <h4>Editar Arquivo</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="nome" type="text" class="validate">
-                        <label for="nome" class="">Nome</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="descricao" type="text" class="validate">
-                        <label for="descricao" class="">Descrição</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input type="text" class="datepicker" placeholder="Data inicio">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input type="text" class="datepicker" placeholder="Data de Expiração">    
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <a href="biblioteca/ver.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
-                        <button type="button" class="waves-effect waves-light btn">Editar</button>
-                        <a href="biblioteca/listar.html" class="waves-effect waves-light btn blue">Ver todos</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s7 offset-s1">
-                <div class="row">
-                    <div class="col s8">
-                        <h4>Informações</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <table>
-                            <thead>
-                                <tr>                        
-                                    <th>Tipo</th>
-                                    <th>Tamanho do arquivo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Pdf, Word...</td>
-                                    <td>Mb, gigas...</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6">
+                                <h1>Editar Título</h1>
+                            </div>
+                            <div class="col s6 text-right">
+                                <a href="biblioteca/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                    <i class="material-icons left">keyboard_backspace</i>
+                                    Voltar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate" value="Padrões de Design">
+                                <label for="nome">Título</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="desc" class="materialize-textarea">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloremque possimus eveniet iure earum facere perspiciatis, praesentium modi quaerat cupiditate.</textarea>
+                                <label for="desc" class="">Descrição</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <figure class="preview-file">
+                                    <img src="assets/img/file-preview.jpg" alt="preview">
+                                    <div>
+                                        <figcaption>padroes-de-desigin.pdf</figcaption>
+                                        <button class="btn btn-small">
+                                            <i class="material-icons left">save_alt</i>
+                                            Fazer download
+                                        </button>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="file-field input-field s12">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Arquivo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Curso</option>
+                                    <option value="1" selected>Sistemas da Informação</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Disciplina</option>
+                                    <option value="1" selected>Desenvolvimento Web</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Status</option>
+                                    <option value="1" selected>Público</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <a href="biblioteca/editar.html" class="waves-effect waves-light btn btn-small blue">
+                                    <i class="material-icons left">save</i>
+                                    Salvar
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

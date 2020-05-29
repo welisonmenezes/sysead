@@ -1,0 +1,24 @@
+.btn.btn-small {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.btn.btn-small i {
+    line-height: 24px;
+}
+
+.pagination {
+    margin-top: 60px;
+}
+.pagination li {
+    height: 24px;
+}
+.pagination li a {
+    line-height: 24px;
+    padding: 0 5px;
+}
+.pagination li i {
+    line-height: 24px;
+    font-size: 1.5rem;
+}
