@@ -1,0 +1,206 @@
+<div id="subitem-content">
+    <div class="card">
+        <div class="card-content">
+            <div class="row">
+                <div class="col s6">
+                    <h1>Conteúdos desta Unidade</h1>
+                </div>
+                <div class="col s6 text-right">
+                    <button class="waves-effect waves-light btn btn-small  blue text-left modal-trigger"
+                        data-target="modalconteudo">
+                        <i class="material-icons left">post_add</i>
+                        Criar Conteúdo
+                    </button>
+                    <button class="waves-effect waves-light btn btn-small text-left" id="remove-subitem">
+                        <i class="material-icons left">save</i>
+                        Gravar
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="form-filter">
+                        <div class="row">
+                            <div class="input-field col">
+                                <input type="text" class="validate" placeholder="Palavra chave">
+                            </div>
+                            <div class="input-field col">
+                                <input type="text" class="validate" placeholder="Tipo">
+                            </div>
+                            <div class="input-field col">
+                                <input type="text" class="validate" placeholder="Data">
+                            </div>
+                            <div class="input-field col valign-wrapper">
+                                <button class="btn-flat" type="submit" name="action">
+                                    <i class="material-icons right">search</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Tipo</th>
+                            <th>Data Criação</th>
+                            <th class="text-right">Remover<br>Conteúdo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="odd">
+                            <td>1</td>
+                            <td>Artigo HTML 5</td>
+                            <td>Artigo</td>                            
+                            <td>00/00/0000</td>
+                            <td class="text-right">
+                                <span class="fake-link danger">
+                                    <i class="material-icons">clear</i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="even">
+                            <td>1</td>
+                            <td>Artigo HTML 5</td>
+                            <td>Artigo</td>                            
+                            <td>00/00/0000</td>
+                            <td class="text-right">
+                                <span class="fake-link danger">
+                                    <i class="material-icons">clear</i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="odd">
+                            <td>1</td>
+                            <td>Artigo HTML 5</td>
+                            <td>Artigo</td>                            
+                            <td>00/00/0000</td>
+                            <td class="text-right">
+                                <span class="fake-link danger">
+                                    <i class="material-icons">clear</i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="even">
+                            <td>1</td>
+                            <td>Artigo HTML 5</td>
+                            <td>Anexo</td>                            
+                            <td>00/00/0000</td>
+                            <td class="text-right">
+                                <span class="fake-link danger">
+                                    <i class="material-icons">clear</i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="odd">
+                            <td>1</td>
+                            <td>Artigo HTML 5</td>
+                            <td>Artigo</td>                            
+                            <td>00/00/0000</td>
+                            <td class="text-right">
+                                <span class="fake-link danger">
+                                    <i class="material-icons">clear</i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="even">
+                            <td>1</td>
+                            <td>Artigo HTML 5</td>
+                            <td>Anexo</td>                            
+                            <td>00/00/0000</td>
+                            <td class="text-right">
+                                <span class="fake-link danger">
+                                    <i class="material-icons">clear</i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="odd">
+                            <td>1</td>
+                            <td>Artigo HTML 5</td>
+                            <td>Artigo</td>                            
+                            <td>00/00/0000</td>
+                            <td class="text-right">
+                                <span class="fake-link danger">
+                                    <i class="material-icons">clear</i>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="modalconteudo" class="modal modal-fixed-footer bottom-sheet">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s6">
+                    <h1>Cadastrar Conteúdo</h1>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="nome" type="text" class="validate">
+                            <label for="nome">Título</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="desc" class="materialize-textarea"></textarea>
+                            <label for="desc" class="">Descrição</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="">Tipo</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="article" class="materialize-textarea"></textarea>
+                            <label for="article" class="">Artigo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" placeholder="Data Início">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" placeholder="Data Expiração">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="">Status</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="waves-effect waves-light btn btn-small blue-grey modal-close">
+                <i class="material-icons left">arrow_back</i>
+                Cancelar
+            </button>
+            <button class="btn waves-effect waves-light btn-small modal-close">
+                <i class="material-icons left">post_add</i>
+                Concluir
+            </button>
+        </div>
+    </div>
+</div>

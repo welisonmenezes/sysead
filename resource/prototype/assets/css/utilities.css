@@ -1,0 +1,81 @@
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.fake-link {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #b5b5c3 !important;
+}
+.fake-link.danger:hover {
+    color: #F44336 !important;
+}
+.fake-link.green-text:hover {
+    color: #2bbbad !important;
+}
+.fake-link i {
+    vertical-align: middle;
+    font-size: 20px;
+}
+.fake-link.green-text i {
+    font-size: 16px;
+}
+
+button.danger {
+    color: #F44336 !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #ccc;
+}
+.scrollbar-big::-webkit-scrollbar {
+    width: 3px;
+    background: #26a69a;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-track {}
+::-webkit-scrollbar-track-piece {}
+::-webkit-scrollbar-thumb {
+    background: #26a69a;
+}
+::-webkit-scrollbar-corner {}
+::-webkit-resizer {}
+
+.no-margin {
+    margin: 0 !important;
+}

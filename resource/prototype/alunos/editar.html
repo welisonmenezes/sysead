@@ -1,0 +1,139 @@
+<main class="content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 d-flex">
+                <div class="breadcrumb-wrap">
+                    <a href="alunos/listar.html" class="breadcrumb">Todos os Alunos</a>
+                    <span class="breadcrumb">Editar Aluno</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6">
+                                <h1>Editar Aluno</h1>
+                            </div>
+                            <div class="col s6 text-right">
+                                <a href="alunos/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                    <i class="material-icons left">keyboard_backspace</i>
+                                    Voltar
+                                </a>
+                                <div class="d-inline-block more-options">
+                                    <i class="material-icons left open-more-options">more_vert</i>
+                                    <ul>
+                                        <li>
+                                            <button class="btn-flat insert-sub-item" data-subitem="alunos/sub-itens/cursos.html">
+                                                <i class="material-icons left">class</i>
+                                                Vincular Cursos
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-flat danger modal-trigger" data-target="modaldeletar">
+                                                <i class="material-icons left">delete</i>
+                                                Excluir Aluno
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate" value="Dandara Carioca">
+                                <label for="nome">Nome Completo</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="login" type="text" class="validate" value="abcbolinhas">
+                                <label for="login">Login</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="senha" type="text" class="validate">
+                                <label for="senha">Senha</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="cpf" type="text" class="validate" value="999.999.999-99">
+                                <label for="cpf">CPF</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="text" class="validate" value="email@email.com">
+                                <label for="email">E-mail</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="phone" type="text" class="validate" value="49 9 9999-9999">
+                                <label for="phone">Telefone</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="desc" class="materialize-textarea">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nisi culpa rem, quaerat ab accusamus incidunt saepe in eum dolor!</textarea>
+                                <label for="desc" class="">Apresentação</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="box-avatar">
+                                    <img src="assets/img/avatar.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="file-field input-field s12">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Foto de perfil">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Status</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <a href="alunos/editar.html" class="waves-effect waves-light btn btn-small blue">
+                                    <i class="material-icons left">save</i>
+                                    Salvar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div id="subitem"></div>
+            </div>
+        </div>
+    </div>
+    <div id="modaldeletar" class="modal modal-small">
+        <div class="modal-content">
+            <h4>Deseja realmente deletar este item?</h4>
+        </div>
+        <div class="modal-footer">
+            <div>
+                <button class="waves-effect waves-light btn btn-small red modal-close">Deletar</button>
+                <button class="btn waves-effect waves-light btn-small blue-grey lighten-2 modal-close">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</main>

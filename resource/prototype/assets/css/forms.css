@@ -1,0 +1,31 @@
+textarea.materialize-textarea {
+    min-height: 150px;
+}
+
+.form-filter .btn-flat {
+    margin-top: 6px;
+}
+.form-filter .btn-flat i{
+    margin: 0;
+}
+
+
+.row .col.input-field {
+    margin: 0 0 0 0;
+}
+
+[type="checkbox"]+span:not(.lever) {
+    padding: 0;
+    width: 18px;
+}
+
+.file-field .btn,
+.file-field .btn-large,
+.file-field .btn-small {
+    height: 36px;
+    line-height: 36px;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    height: 36px;
+}

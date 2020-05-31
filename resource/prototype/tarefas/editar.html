@@ -1,87 +1,124 @@
 <main class="content-area">
     <div class="container">
         <div class="row">
-            <div class="col s12">
-                <h1>Tarefas</h1>
+            <div class="col s12 d-flex">
+                <div class="breadcrumb-wrap">
+                    <a href="tarefas/listar.html" class="breadcrumb">Tarefas</a>
+                    <span class="breadcrumb">Editar Tarefa</span>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col s4">
-                <div class="row">
-                    <div class="col s12">
-                        <h4>Editar Tarefa</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="nome" type="text" class="validate" value="2020 Parte 1">
-                        <label for="nome" class="">Nome</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="descricao" type="text" class="validate" value="Descrição do período">
-                        <label for="descricao" class="">Descrição</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="inicio" type="text" class="validate" value="01/02/2020">
-                        <label for="inicio" class="">Data de Incício</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="final" type="text" class="validate" value="30/06/2020">
-                        <label for="final" class="">Data de Expiração</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <button class="waves-effect waves-light btn">Editar</button>
-                        <a href="tarefas/listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6">
+                                <h1>Editar Tarefa</h1>
+                            </div>
+                            <div class="col s6 text-right">
+                                <a href="tarefas/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                    <i class="material-icons left">keyboard_backspace</i>
+                                    Voltar
+                                </a>
+                                <div class="d-inline-block more-options">
+                                    <i class="material-icons left open-more-options">more_vert</i>
+                                    <ul>
+                                        <li>
+                                            <button class="btn-flat insert-sub-item" data-subitem="tarefas/sub-itens/resolucoes.html">
+                                                <i class="material-icons left">offline_pin</i>
+                                                Ver Resoluções
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-flat danger modal-trigger" data-target="modaldeletar">
+                                                <i class="material-icons left">delete</i>
+                                                Excluir Tarefa
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate" value="Defina o que é HTML">
+                                <label for="nome">Título</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="desc" class="materialize-textarea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus obcaecati reiciendis eos? Repellendus repudiandae quibusdam impedit inventore eligendi omnis.</textarea>
+                                <label for="desc" class="">Enuciado</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nota" type="text" placeholder="Peso" value="2.0">
+                                <label for="nota" class="">Peso <small>(Nota)</small></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Início" value="00/00/0000">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Expiração" value="00/00/0000">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Disciplina</option>
+                                    <option value="1" selected>Desenvolvimento Web</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Unidade</option>
+                                    <option value="1" selected>Unidade 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Status</option>
+                                    <option value="1" selected>Pendente</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <a href="tarefas/editar.html" class="waves-effect waves-light btn btn-small blue">
+                                    <i class="material-icons left">save</i>
+                                    Salvar
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col s7 offset-s1">
-                <div class="row">
-                    <div class="col s8">
-                        <h4>Respostas</h4>
-                    </div>
-                    <div class="col s4 text-right">
-                        <button class="waves-effect waves-light btn btn-small">Adicionar Turma</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Aluno</th>
-                                    <th>Data</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td> Fulano de Tal de Tal</td>
-                                    <td>99/99/9999</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td> Fulano de Tal de Tal</td>
-                                    <td>99/99/9999</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td> Fulano de Tal de Tal</td>
-                                    <td>99/99/9999</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            <div class="col s6">
+                <div id="subitem"></div>
+            </div>
+        </div>
+    </div>
+    <div id="modaldeletar" class="modal modal-small">
+        <div class="modal-content">
+            <h4>Deseja realmente deletar este item?</h4>
+        </div>
+        <div class="modal-footer">
+            <div>
+                <button class="waves-effect waves-light btn btn-small red modal-close">Deletar</button>
+                <button class="btn waves-effect waves-light btn-small blue-grey lighten-2 modal-close">Cancelar</button>
             </div>
         </div>
     </div>

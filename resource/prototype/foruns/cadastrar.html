@@ -1,40 +1,91 @@
 <main class="content-area">
     <div class="container">
         <div class="row">
-            <div class="col s5">
-                <div class="row">
-                    <div class="col s12">
-                        <h4>Cadastrar Fórum</h4>
-                    </div>
+            <div class="col s12 d-flex">
+                <div class="breadcrumb-wrap">
+                    <a href="foruns/listar.html" class="breadcrumb">Fóruns</a>
+                    <span class="breadcrumb">Cadastrar Fórum</span>
                 </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="nome" type="text" class="validate">
-                        <label for="nome" class="">Nome do Autor</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="titulo" type="text" class="validate">
-                        <label for="titulo" class="">Titulo</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="descrição" type="text" class="validate">
-                        <label for="descrição" class="">Descrição</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="status" type="text" class="validate">
-                        <label for="status" class="">Status</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <a href="foruns/listar.html" class="waves-effect waves-light btn blue-grey">Voltar</a>
-                        <button class="waves-effect waves-light btn">Cadastrar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s6">
+                                <h1>Cadastrar Fórum</h1>
+                            </div>
+                            <div class="col s6 text-right">
+                                <a href="foruns/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                    <i class="material-icons left">keyboard_backspace</i>
+                                    Voltar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate" value="">
+                                <label for="nome">Título</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="desc" class="materialize-textarea"></textarea>
+                                <label for="desc" class="">Descrição</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="resposta" class="materialize-textarea"></textarea>
+                                <label for="resposta" class="">Resposta Root</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Início">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Expiração">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Disciplina</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Unidade</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="">Status</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <a href="foruns/editar.html" class="waves-effect waves-light btn btn-small blue">
+                                    <i class="material-icons left">save</i>
+                                    Salvar
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
