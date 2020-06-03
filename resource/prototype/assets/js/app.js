@@ -198,3 +198,8 @@ function RemoveSubItem() {
         })
     }
 }
+
+//Flatpickr
+$(".selector").flatpickr(optional_config);
+const myInput = document.querySelector(".myInput");
+const fp = flatpickr(myInput, {});  // flatpickr
