@@ -1,0 +1,86 @@
+<main class="content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 d-flex">
+                <div class="breadcrumb-wrap">
+                    <a href="avisos/listar.html" class="breadcrumb">Todos os Avisos</a>
+                    <span class="breadcrumb">Editar Avisos</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s8">
+                                <h1>Editar Avisos</h1>
+                            </div>
+                            <div class="col s4 text-right">
+                                <a href="avisos/listar.html" class="waves-effect waves-light btn btn-small  blue-grey text-left">
+                                    <i class="material-icons left">keyboard_backspace</i>
+                                    Voltar
+                                </a>
+                                <div class="d-inline-block more-options">
+                                    <i class="material-icons left open-more-options">more_vert</i>
+                                    <ul>
+                                        <li>
+                                            <button class="btn-flat danger modal-trigger" data-target="modaldeletar">
+                                                <i class="material-icons left">delete</i>
+                                                Excluir Avisos
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate" value="1º Semestre 2020">
+                                <label for="nome" class="">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="desc" class="materialize-textarea">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nisi culpa rem, quaerat ab accusamus incidunt saepe in eum dolor!</textarea>
+                                <label for="desc" class="">Descrição</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Início" value="00/00/00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" placeholder="Data Fim" value="00/00/00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <button class="waves-effect waves-light btn btn-small blue">
+                                    <i class="material-icons left">save</i>
+                                    Salvar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div id="subitem"></div>
+            </div>
+        </div>
+    </div>
+    <div id="modaldeletar" class="modal modal-small">
+        <div class="modal-content">
+            <h4>Deseja realmente deletar este item?</h4>
+        </div>
+        <div class="modal-footer">
+            <div>
+                <button class="waves-effect waves-light btn btn-small red modal-close">Deletar</button>
+                <button class="btn waves-effect waves-light btn-small blue-grey lighten-2 modal-close">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</main>
